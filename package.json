@@ -6,12 +6,11 @@
   "scripts": {
     "build": "rbxtsc",
     "watch": "rbxtsc -w",
-    "prepublishOnly": "npm run build"
+    "prepare": "rbxtsc"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "author": "gIaceon",
+  "license": "MIT",
   "types": "out/index.d.ts",
   "files": [
     "out",
@@ -19,6 +18,10 @@
   ],
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gIaceon/berry-buffer"
   },
   "devDependencies": {
     "@rbxts/compiler-types": "^3.0.0-types.0",
